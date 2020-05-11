@@ -1,21 +1,15 @@
-//C++ Program
-//check for vowel or consonant
-#include <iostream>
-using namespace std;
-//main function
+#include<stdio.h>
 int main()
 {
-	char c;
-	cout<<"Enter an alphabet: ";
-	cin>>c;
-        //checking for vowels	
-        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
-	{
-		cout<<c<<" is a vowel";     //condition true input is vowel
-	}
-	else
-	{
-		cout<<c<<" is a consonant";     //condition false input is consonant
-	}
-	return 0;
+unsigned int num;
+int c=0;
+scanf("%u",&num);
+for(num;num>>=1;)
+{
+if(num&1)
+c++;
+
+}
+printf("%d",c);
+return 0;
 }
